@@ -26,15 +26,15 @@ header {
 a {
 	text-decoration: none;
 	font-size: 20px;
-	color: white;
+	color: silver;
 	margin: 50px;
 	font-weight: 700;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: yellow;
-	background-color: white;
+	color: gray;
+	background-color: darkgray;
 }
 
 ul {
@@ -84,12 +84,16 @@ tr:hover {
 				<th>Service Id</th>
 				<th>Service Name</th>
 				<th>Total Seats</th>
+				<th>Add to Slot</th>
+				<th>Update the Slot</th>
 			</tr>
 			<c:forEach items="${itemList}" var="item">
 				<tr>
 					<td>${item.itemId}</td>
 					<td>${item.itemName}</td>
 					<td>${item.totalSeat}</td>
+					<td><a href="/slot-item-add/${item.itemId}">Add to Slots</a></td>
+					<td><a href="/updateGymItem/${item.itemId}">Update</a></td>
 				</tr>
 			</c:forEach>
 		</table>

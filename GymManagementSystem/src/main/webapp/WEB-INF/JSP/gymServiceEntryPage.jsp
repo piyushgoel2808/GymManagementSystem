@@ -42,7 +42,7 @@ body {
 
 .form-container form label {
     margin-bottom: 10px;
-    color: white; /* Ensure labels are visible */
+    color: white;
 }
 
 .form-container form input[type="text"],
@@ -52,7 +52,7 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
-    width: calc(100% - 22px); /* Adjusted width calculation for inputs */
+    width: calc(100% - 22px);
 }
 
 .form-container form button {
@@ -95,9 +95,9 @@ a:hover {
         <form action="/gymService" method="post">
             <input type="hidden" name="itemId" value="${itemRecord.itemId}" />
             <label for="itemName">Enter Service Name:</label>
-            <input type="text" id="itemName" name="itemName" />
+            <input type="text" id="itemName" name="itemName" requried />
             <label for="totalSeat">Enter Total Seats:</label>
-            <input type="number" id="totalSeat" name="totalSeat" />
+            <input type="number" id="totalSeat" name="totalSeat" requried/>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
             <a href="/index">Home</a>

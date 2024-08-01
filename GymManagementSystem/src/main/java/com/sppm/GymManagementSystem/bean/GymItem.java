@@ -37,5 +37,11 @@ public class GymItem {
 		this.itemName = itemName;
 		this.totalSeat = totalSeat;
 	}
-	
+	public GymItem(Item item) {
+		super();
+		this.itemId=itemId;
+		this.itemName=itemName;
+		this.totalSeat=totalSeat;
+		
+	}
 }
